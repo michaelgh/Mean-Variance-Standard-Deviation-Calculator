@@ -8,28 +8,28 @@ def calculate(list):
     
     arr = np.array(list).reshape(3,3)
 
-    axis1_mean = arr.mean(axis=0)
-    axis2_mean = arr.mean(axis=1)
+    axis1_mean = arr.mean(axis=0).tolist()
+    axis2_mean = arr.mean(axis=1).tolist()
     lst_mean = np.mean(list)
 
-    axis1_variance = arr.var(axis=0)
-    axis2_variance = arr.var(axis=1)
+    axis1_variance = arr.var(axis=0).tolist()
+    axis2_variance = arr.var(axis=1).tolist()
     lst_variance = np.var(list)
 
-    axis1_stddev =  arr.std(axis=0)
-    axis2_stddev =  arr.std(axis=1)
+    axis1_stddev =  arr.std(axis=0).tolist()
+    axis2_stddev =  arr.std(axis=1).tolist()
     lst_standarddev = np.std(list)
 
-    axis1_max = arr.max(axis=0)
-    axis2_max = arr.max(axis=1)
+    axis1_max = arr.max(axis=0).tolist()
+    axis2_max = arr.max(axis=1).tolist()
     lst_max = np.max(list)
 
-    axis1_min = arr.min(axis=0)
-    axis2_min = arr.min(axis=1)
+    axis1_min = arr.min(axis=0).tolist()
+    axis2_min = arr.min(axis=1).tolist()
     lst_min = np.min(list)
 
-    axis1_sum = arr.sum(axis=0)
-    axis2_sum = arr.sum(axis=1)
+    axis1_sum = arr.sum(axis=0).tolist()
+    axis2_sum = arr.sum(axis=1).tolist()
     lst_sum = sum(list)
 
     results = {
